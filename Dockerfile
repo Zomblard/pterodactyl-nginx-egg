@@ -71,6 +71,11 @@ RUN apt-get update \
         php${PHP_VERSION}-maxminddb \
         php${PHP_VERSION}-protobuf \
         php${PHP_VERSION}-OPcache \
+        php${PHP_VERSION}-mysql \
+        php${PHP_VERSION}-gd \
+        php${PHP_VERSION}-curl \
+        php${PHP_VERSION}-mbstring \
+        php${PHP_VERSION}-zip \
     && apt-get purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
 
